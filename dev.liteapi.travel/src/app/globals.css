@@ -27,3 +27,21 @@ body {
   margin: 8px 0px 0px 0px;
   background-color: #fef9f3;
 }
+
+.anime-opacity:hover {
+    opacity: 0;  
+    transition: opacity 0.35s ease-out;
+    -webkit-transition: opacity 0.35s ease-out;  
+    -moz-transition: opacity 0.35s ease-in-out;   
+
+}
+
+.parent-cat-el {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.child-cat-el {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
