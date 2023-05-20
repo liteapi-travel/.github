@@ -41,6 +41,10 @@ body {
   grid-template-columns: 1fr;
 }
 
+.hyphens {
+  hyphens: auto;
+}
+
 .child-cat-el {
   grid-row-start: 1;
   grid-column-start: 1;

@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"],
+      "liteapi/logo": ["./src/app/(iamges)/liteapi.jpeg"]
+    },
+    "baseUrl": ".",
   }
 }

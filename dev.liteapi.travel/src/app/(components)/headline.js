@@ -11,7 +11,8 @@ function HeadLine() {
         </div>
         <div className='mx-auto py-7 lg:w-[1000px] flex flex-row items-center justify-evenly w-0 h-0'>
             <CategoryLink link='#sdk' name='SDK'/>
-            <CategoryLink link='#article' name='Article'/>
+            <CategoryLink link='#articles' name='Article'/>
+            <CategoryLink link='#research' name='Research'/>
         </div>
     </div>
    </> 

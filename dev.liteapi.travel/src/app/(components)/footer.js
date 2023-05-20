@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-        <div className='fixed h-6 bottom-0 flex items-center justify-center w-full right-0'>
+        <div className=' h-6 flex items-center justify-center w-full shrink-0 align-middle mt-12'>
           <p className=''> © liteAPI, Inc. All Rights Reserved.</p>
         </div>
     </>

@@ -3,19 +3,32 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-function CategoryElement({ linkType, description, img, link }) {
+function CategoryElement({ name, linkType, description, img, link, color }) {
+  let imageClass = ''
+  let linkClass = 'text-sm '
+  if (!img) {
+    imageClass += 'hidden'
+  }
+  if (linkType === 'Github') {
+    linkClass += ' text-green-600'
+  }else {
+    linkClass += ` text-${color}-600`
+  }
+
   return (
     <>  
         <div>
-            <Link href={ ''+link } className='text-green-600 text-sm'> { linkType } </Link>
-            <div className=' parent-cat-el w-full'>
-                <p className='child-cat-el text-gray-400 text-sm'> { description } </p>
+            <div>{ name }</div>
+            <Link href={ ''+link } className={linkClass}> { linkType } </Link>
+            <div className=' parent-cat-el w-72 text-red'>
+                <p className='child-cat-el text-gray-400 text-sm break-normal hyphens'> { description } </p>
                 <div className='child-cat-el anime-opacity'>
                 <Image
                     src={ img }
                     width={350}
                     height={350}
                     alt={ description }
+                    className={imageClass}
                 />
                 </div>
             </div>
