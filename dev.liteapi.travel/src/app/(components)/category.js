@@ -12,9 +12,6 @@ function Category( { name, id } ) {
           <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
           <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
           <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
-          <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
-          <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
-          <CategoryElement name='LiteApi' img={sdkImage} description='description' linkType='Github' link={'https://github.com/liteapi-travel/sdks'}/>
         </div>
         <div className=' border-b-2 my-7'></div>
     </>
