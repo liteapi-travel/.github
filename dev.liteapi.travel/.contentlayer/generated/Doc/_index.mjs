@@ -4,7 +4,8 @@ import articlesDocs__aMdx from './articles-docs__a.mdx.json' assert { type: 'jso
 import articlesDocs__latestMdx from './articles-docs__latest.mdx.json' assert { type: 'json' }
 import articlesDocs__liteapiMdx from './articles-docs__liteapi.mdx.json' assert { type: 'json' }
 import articlesDocs__nuiteeMdx from './articles-docs__nuitee.mdx.json' assert { type: 'json' }
+import articlesDocs__salceforceMdx from './articles-docs__salceforce.mdx.json' assert { type: 'json' }
 import articlesDocs__test1Mdx from './articles-docs__test1.mdx.json' assert { type: 'json' }
 import articlesDocs__test2Mdx from './articles-docs__test2.mdx.json' assert { type: 'json' }
 
-export const allDocs = [articlesDocs__aMdx, articlesDocs__latestMdx, articlesDocs__liteapiMdx, articlesDocs__nuiteeMdx, articlesDocs__test1Mdx, articlesDocs__test2Mdx]
+export const allDocs = [articlesDocs__aMdx, articlesDocs__latestMdx, articlesDocs__liteapiMdx, articlesDocs__nuiteeMdx, articlesDocs__salceforceMdx, articlesDocs__test1Mdx, articlesDocs__test2Mdx]

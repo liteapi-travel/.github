@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 
-function CategoryElement({ name, linkType, description, img, link, color }) {
+function CategoryElement({ name, linkType, description, img, link, color, article }) {
   let imageClass = 'border border-solid rounded-xl '
   let linkClass = 'text-sm '
   if (!img) {
@@ -19,7 +19,7 @@ function CategoryElement({ name, linkType, description, img, link, color }) {
     <>  
         <div>
             <div>{ name }</div>
-            <Link href={ ''+link } className={linkClass}> { linkType } </Link>
+            <Link href={ ''+link } className={article ? linkClass+ ' underline': linkClass}> { linkType } </Link>
             <div className=' parent-cat-el w-72 text-red'>
                 <p className='child-cat-el text-gray-400 text-sm break-normal hyphens'> { description } </p>
                 <div className='child-cat-el anime-opacity '>

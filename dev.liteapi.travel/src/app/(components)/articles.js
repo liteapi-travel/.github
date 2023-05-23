@@ -6,7 +6,7 @@ import sortedDocs from '@/app/(docsManipulation)/sortedDocs'
 const article = ( doc ) => {
     return (
         <>
-          <CategoryElement className=' w-10 h-9' description={doc.description} linkType={doc.title} color='red' link={'/articles/'+doc.slugAsParams}/>
+          <CategoryElement className=' w-10 h-9' description={doc.description} linkType={doc.title} color='red' link={'/articles/'+doc.slugAsParams} article={true}/>
         </>
     )
 }
