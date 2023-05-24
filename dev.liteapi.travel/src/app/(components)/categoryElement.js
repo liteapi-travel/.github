@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 
 function CategoryElement({ name, linkType, description, img, link, color, article }) {
-  let imageClass = 'border border-solid rounded-xl '
+  let imageClass = 'border border-solid rounded-xl imageClass '
   let linkClass = 'text-sm '
   if (!img) {
     imageClass += 'hidden'
@@ -17,10 +17,10 @@ function CategoryElement({ name, linkType, description, img, link, color, articl
 
   return (
     <>  
-        <div>
-            <div>{ name }</div>
+        <div className=' category-el'>
+            <div className=' cat-el-title'>{ name }</div>
             <Link href={ ''+link } className={article ? linkClass+ ' underline': linkClass}> { linkType } </Link>
-            <div className=' parent-cat-el w-72 text-red'>
+            <div className=' parent-cat-el w-full text-red'>
                 <p className='child-cat-el text-gray-400 text-sm break-normal hyphens'> { description } </p>
                 <div className='child-cat-el anime-opacity '>
                 <Image

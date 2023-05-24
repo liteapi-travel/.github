@@ -12,8 +12,8 @@ const articleDisplay = ( doc ) => {
     const link = `/articles/${doc.slugAsParams}`
     return (
         <>
-            <div className=' w-10/12 border-b border-b-black flex place-self-end mx-9 my-6'>
-                <div className=' flex flex-row justify-evenly float-right mt-5'>
+            <div className='border-b border-b-black flex place-self-end art-pre-el'>
+                <div className=' flex flex-row justify-evenly float-right'>
                     <div className=' underline text-xl mx-7 font-serif w-2/6 tracking-wide underline-offset-2 font-medium'> <Link href={link}>{doc.title}</Link></div>
                     <div className='flex flex-col w-4/6 place-self-end text-left h-full font-serif font-light tracking-widest text-base'>
                         <div className=' leading-8'>
@@ -31,18 +31,18 @@ const articleDisplay = ( doc ) => {
 function page() {
    return (
     <>
-            <div className='flex flex-col justify-center items-center border-b border-gray-300 border-dotted mx-auto w-full py-7 lg:w-[1000px]'>
-                <div className='text-2xl items-center flex justify-center text-center font-serif' >
+            <div className='flex flex-col justify-center items-center border-b border-gray-300 border-dotted mx-auto w-full py-7 lg:w-[1000px] art-head'>
+                <div className='text-2xl items-center flex justify-center text-center font-serif art-head-desc' >
                     Our articles offer valuable insights, practical solutions, and actionable tips <br/>
                      Empowering users to make informed decisions efficiently
                 </div>
                 <div className='mx-auto py-7 lg:w-[1000px] flex flex-row items-center justify-evenly w-0 h-0'>
                 </div>
-                <div className='sticky top-0 w-full pt-4 inherit-bg border-purple-900 border-b'>
+                <div className='sticky top-0 w-full pt-4 inherit-bg border-purple-900 border-b art-header'>
                     <div className=' place-self-start text-4xl text-justify font-serif my-4'>Articles</div>
                 </div>
 
-                <div className='flex flex-col w-full'>
+                <div className='flex flex-col w-full art-head-preview'>
                     {sortedDocs.map((doc) => articleDisplay(doc))}
                 </div>  
             </div>

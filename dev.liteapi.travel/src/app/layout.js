@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.cdnfonts.com/css/adobe-garamond-pro-2" rel="stylesheet" /> 
       </Head>
       <body className={inter.className}>
-       <div className='w-full h-full flex flex-col mx-72 ml-0'> 
+       <div className='w-full h-full flex flex-col mx-72 ml-0 wrapper'> 
           <Header logo={ LiteapiLogo }/>
             {children}
           <Footer />

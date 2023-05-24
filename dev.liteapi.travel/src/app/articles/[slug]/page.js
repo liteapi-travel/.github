@@ -3,6 +3,7 @@ import { allDocs } from 'contentlayer/generated'
 import { notFound }from 'next/navigation'
 import { getMDXComponent } from "next-contentlayer/hooks";
 import Link from 'next/link';
+import Pre from '../../(docsManipulation)/addCopy';
 
 const fetchDoc = async (slug) => {
   const doc = allDocs.find((doc) => doc.slugAsParams === slug)
@@ -24,8 +25,10 @@ const page = async ({ params }) => {
   const Content = getMDXComponent(doc.body.code)
   const docDate = new Date(doc.date)
   const month = docDate.toLocaleString('default', { month: 'short' });
-  
   const date = `${month} ${docDate.getDay()}, ${docDate.getFullYear()}`
+  const components = {
+    pre: Pre,
+  };
 
   return (
     <>
@@ -43,7 +46,7 @@ const page = async ({ params }) => {
         </div>
       </div>
       <div className=' article-p break-normal hyphens mx-auto mt-32 article-body text-justify font-serif font-light leading-9 underline-offset-8'>
-          <Content />
+          <Content components={components} />
       </div>
 
     </div>

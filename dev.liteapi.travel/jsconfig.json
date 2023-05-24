@@ -6,5 +6,6 @@
       "liteapi/logo": ["./src/app/(iamges)/liteapi.jpeg"]
     },
     "baseUrl": ".",
-  }
+  },
+  "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts", ".contentlayer/generated"]
 }

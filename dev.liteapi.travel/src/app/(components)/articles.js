@@ -11,20 +11,22 @@ const article = ( doc ) => {
     )
 }
 
-const page = async ({ params }) => {
+const page = () => {
     const latestDocs = sortedDocs.slice(0,3)
   return (
     <>
-        <div className='text-2xl float-left mb-3' id='articles' >Articles</div>
-        <div className='flex flex-col'>
-            <div className=' flex flex-row justify-between items-center flex-wrap'>
-                {latestDocs.map((doc) => article(doc))}
-                <div className='my-10'></div>
-            </div>
-            <div className=' text-blue-400 place-self-end'><Link href='/articles'>More Articles → </Link></div>
+        <div className=' category-art flex flex-col'>
+          <div className='text-2xl float-left mb-3' id='articles' >Articles</div>
+          <div className='flex flex-col'>
+              <div className=' grid grid-cols-3 els-art-wrapper gap-8'>
+                  {latestDocs.map((doc) => article(doc))}
+              </div>
+              <div className=' text-blue-400 place-self-end'><Link href='/articles'>More Articles → </Link></div>
+          </div>
+
+          <div className=' border-b-2 my-7'></div>
         </div>
 
-        <div className=' border-b-2 my-7'></div>
     </>
   )
 }
