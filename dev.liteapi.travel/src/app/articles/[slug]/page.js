@@ -33,20 +33,20 @@ const page = async ({ params }) => {
   return (
     <>
     <div className='w-full h-full flex flex-col mx-72 ml-0'>  
-      <div className='flex flex-col justify-center mt-32 mx-80'>
+      <div className='flex flex-col justify-center mt-32 mx-80 slug-headline'>
         <div className=' place-self-start text-justify font-serif underline text-lg underline-offset-4 gramond'><Link href='/articles'>← Return to articles</Link></div>
         <div className=' text-left text-7xl mt-4 garamond font-thin place-self-start'>
           { doc.title }
         </div>
-        <div className=' place-items-center place-content-start text-left px-0 m-0 font-serif text-lg'>
+        <div className=' place-items-center place-content-start text-left px-0 m-0 font-serif text-lg place-self-start pt-5'>
             By { doc.author }
         </div>
-        <div className=' place-items-center place-content-start text-left px-0 m-0 '>
+        <div className=' place-items-center place-content-start text-left px-0 m-0 place-self-start'>
           { date }
         </div>
       </div>
       <div className=' article-p break-normal hyphens mx-auto mt-32 article-body text-justify font-serif font-light leading-9 underline-offset-8'>
-          <Content components={components} />
+          <Content />
       </div>
 
     </div>
