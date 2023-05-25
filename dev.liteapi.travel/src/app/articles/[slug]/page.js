@@ -13,11 +13,11 @@ const fetchDoc = async (slug) => {
   return doc
 }
 
-export async function generateStaticParams() {
-  return allDocs.map((doc) => ({
-    slug: doc.slugAsParams,
-  }));
-}
+// export async function generateStaticParams() {
+//   return allDocs.map((doc) => ({
+//     slug: doc.slugAsParams,
+//   }));
+// }
  
 
 const page = async ({ params }) => {
